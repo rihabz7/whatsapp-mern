@@ -6,11 +6,14 @@ import Sidebar from "./Sidebar";
 function App() {
   return (
     <div className="app">
-     {/* <h1>Whatsapp clone</h1> */}
-     <Sidebar />
-     <Chat />
+     <div className="app__body">
+      <Sidebar />
+      <Chat />
+     </div>
+
+     
      {/* chat */}
-     {/* 23.11.30 */}
+     {/* 21.12.01 */}
     </div>
   );
 }
