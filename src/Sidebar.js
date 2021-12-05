@@ -5,13 +5,14 @@ import { Avatar, IconButton } from '@material-ui/core';
 import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { SearchOutlined } from "@material-ui/icons";
+import SidebarChat from './SidebarChat';
 
 function Sidebar() {
     return (
         <div className="sidebar">
            
           <div className="sidebar__header">
-            <Avatar src="C:\Users\user\Desktop\COURSE\clone\whatsapp\whatsapp-mern\NEW.jpg"/>
+            <Avatar src="https://wtspdp.com/wp-content/uploads/2020/03/celebrities-38.jpg"/>
             <div className="sidebar__headerRight">
               <IconButton>
                 <DonutLargeIcon />
@@ -21,7 +22,7 @@ function Sidebar() {
               </IconButton>
               <IconButton>
                 <MoreVertIcon />
-              </IconButton>               
+              </IconButton>              
             </div>
           </div>
           <div className="sidebar__search">
@@ -30,7 +31,11 @@ function Sidebar() {
               <input placeholder="Search or start new chat" type="text"/>
             </div>
           </div>
-
+          <div className="sidebar__chats">
+            <SidebarChat />
+            <SidebarChat />
+            <SidebarChat />
+          </div>
         </div>
     )
 }
